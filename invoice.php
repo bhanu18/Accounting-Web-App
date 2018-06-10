@@ -10,7 +10,8 @@
  <h3> Invoice</h3>
  <br>
   <br>
-  <button type="button" class="btn btn-secondary">Create Invoice</button>
+  <button type="button" class="btn btn-secondary">View Invoice</button>
+  <button type="button" class="btn btn-secondary"><a href="create_invoice.php" class="badge badge-secondary">Create Invoice</a></button>
   <br>
   <br>
   <table class="table table-hover">

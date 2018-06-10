@@ -1,3 +1,4 @@
+<?php include ('config.php'); ?>
 <!DOCTYPE html>
 <html>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -15,7 +16,7 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="salesorder.php">Homepage <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#">Homepage <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -23,9 +24,10 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="purchaseorder.php">Purchase Order</a>
+          <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="payment.php">Payment</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
+          <a class="dropdown-item" href="vendor.php">Vendor</a>
         </div>
       </li>
       <li class="nav-item dropdown">
@@ -34,16 +36,43 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="salesorder.php">Sales Order</a>
+          <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="inventory.php">Inventory</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="invoice.php">Invoice</a>
         </div>
         
       </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Customer
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="cus.php">View Customer</a>
+          <a class="dropdown-item" href="#"></a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#"></a>
+        </div>
+        
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Report
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="journal.php">Journal</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="gl.php">General Ledger</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="tb.php">Trial Balance</a>
+          <div class="dropdown-divider"></div>
+        </div>
+        
+      </li>
     </ul>
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <a class="nav-link" href="#"><i class="fa fa-user-plus" aria-hidden="true"></i>
+        <a class="nav-link" href="create_user.php"><i class="fa fa-user-plus" aria-hidden="true"></i>
 Sign Up</a>
       </li>
       <li class="nav-item">
@@ -53,5 +82,6 @@ Login</a>
     </ul>
   </div>
 </nav>
+
     </head>
 </html>
