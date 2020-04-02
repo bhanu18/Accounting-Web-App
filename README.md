@@ -1,2 +1,2 @@
-# web project
+# Accounting System
 
