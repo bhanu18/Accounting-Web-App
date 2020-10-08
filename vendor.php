@@ -30,28 +30,22 @@
       <th scope="col">Email 2</th>
        <th scope="col">Bank Account</th>
     </tr>
-  </thead>
-  <tbody>
-    <?php
+      <?php
 
 //1. make a connection
-$link = mysql_connect('localhost', 'root', '');
+$link = mysqli_connect('localhost', 'root', '','database_final_project','3308');
 if (!$link) {
-    die('Could not connect: ' . mysql_error());
+    die('Could not connect: ' . mysqli_connect_error());
 }
 
 //2. get the information
 
-mysql_select_db('database_final_project');
-
 $sql    = 'SELECT * FROM vedor_general_details';
 $sql2 = 'SELECT Vendor_Bank_Account_Number FROM vendor_bank_details';
-$result = mysql_query($sql, $link);
-$result2 = mysql_query($sql2, $link);
+$result = mysqli_query($link,$sql);
+$result2 = mysqli_query($link, $sql2);
 
-echo "<table>";
-
-while($row = mysql_fetch_array($result))
+while($row = mysqli_fetch_array($result))
 {
   echo "<tr>";
   echo "<td cellspacing='10'>".$row['Vendor_ID']."</td>";
@@ -67,15 +61,15 @@ while($row = mysql_fetch_array($result))
 
 }
 
-echo "</table>";
-
 //list the information
 
 
 //close the connection
-mysql_close($link);
+mysqli_close($link);
 
 ?>
+  </thead>
+  <tbody>
   </tbody>
 </table>
 </div>
