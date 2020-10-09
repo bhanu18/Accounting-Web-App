@@ -18,7 +18,7 @@ VALUES ($customer_name, $date, $phone)";
   if (mysqli_query($link, $query)) {
   echo "New record created successfully";
 } else {
-  echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+  echo "Error: " . $sql . "<br>" . mysqli_error($link);
 }
 
 mysqli_close($link);
